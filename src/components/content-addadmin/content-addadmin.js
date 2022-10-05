@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './content-addadmin.css';
 import './../../assets/styles/globalStyles.css';
 import Button from 'react-bootstrap/Button';
