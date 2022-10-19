@@ -3,7 +3,9 @@ import { Route, Routes } from 'react-router-dom';
 import Sidenav from './components/sidenav/sidenav';
 import Footer from './components/footer/footer';
 import Home from './container/home/home';
+import Login from './container/login/login';
 import Addadmin from './container/addadmin/addadmin';
+import Update from './container/update/update';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -11,18 +13,13 @@ import Col from 'react-bootstrap/Col';
 const RoutesPage = () => {
     return (
         <div>
-            <Row className="gx-0">
-                <Col xs lg="2"  >
-                    <Sidenav/>
-                </Col>
-                <Col xs lg="10" >
                     <Routes>
+                        <Route path='/login' element={<Login/>}/>
                         <Route path='/' element={<Home/>}/>
                         <Route path='/addadmin' element={<Addadmin/>}/>
+                        <Route path='/update/:id' element={<Update/>}/>
+
                     </Routes> 
-                </Col>
-            </Row>
-            <Footer/>
         </div>
     )
 }
