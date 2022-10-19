@@ -57,7 +57,7 @@ function SideNav() {
                     <div className="sideNavMenuitem">
                         <div className="sideNavMenuItemIcon"></div>
                         <div className="sideNavMenuItemName">
-                            <Nav.Link eventKey="link-2">Logout</Nav.Link>
+                            <Nav.Link eventKey="link-2" onClick={()=>navigator("/login")}>Logout</Nav.Link>
                         </div>
                     </div>
                     
