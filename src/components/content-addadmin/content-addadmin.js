@@ -3,8 +3,6 @@ import {useNavigate} from 'react-router-dom';
 import Axios from 'axios';
 import './content-addadmin.css';
 import './../../assets/styles/globalStyles.css';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -18,7 +16,7 @@ const Content_addadmin = () => {
     const [phone, setPhone] = useState("");
     console.log("name=", name)
     console.log("password=", password)
-    
+
     const submitHandler = (event) => {
         event.preventDefault();
         console.log("submit handler called")

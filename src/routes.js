@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Footer from './components/footer/footer';
 import Home from './container/home/home';
 import Login from './container/login/login';
 import Addadmin from './container/addadmin/addadmin';
